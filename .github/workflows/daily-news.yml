@@ -1,9 +1,12 @@
 name: Daily AI News Digest
 
 on:
-  # Run daily at 0:00 AM UTC (adjust as needed)
-  schedule:
-    - cron: "0 0 * * *"
+  # 7:00 AM Central (during CST)
+schedule:
+  - cron: "0 13 * * *"
+
+# 6:00 AM Central (during CDT)
+# cron: "0 11 * * *"
 
   # Allow manual trigger
   workflow_dispatch:
