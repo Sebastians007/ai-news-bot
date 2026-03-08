@@ -5,9 +5,6 @@ on:
     - cron: "0 13 * * *"   # 7 AM Central (CST)
   workflow_dispatch:         # ← This line enables the "Run workflow" button
 
-  # Allow manual trigger
-  workflow_dispatch:
-
 jobs:
   generate-and-send-news:
     runs-on: ubuntu-latest
